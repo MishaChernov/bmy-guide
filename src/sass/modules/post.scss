@@ -1,0 +1,142 @@
+.post {
+  margin: 20px 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $post-border-bottom;
+}
+
+.post__header {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.post__user-icon {
+  margin-right: 20px;
+}
+
+.post__user-name {
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+  text-align: left;
+  text-decoration: none;
+  color: $color-black;
+}
+
+.post__user-activity {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  text-decoration: none;
+  color: $color-gray;
+}
+
+.post__btn-more {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 24px;
+  height: 7px;
+  background: none;
+  outline: none;
+  border: none;
+  text-decoration: none;
+
+  i {
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    margin-left: -2px;
+    border: 2px solid $color-gray;
+    border-radius: 50%;
+    transition-duration: 500ms easy;
+  }
+
+  &:hover {
+    i {
+      transition-duration: 500ms easy;
+      border: 2px solid $color-azure;
+    }
+  }
+}
+
+.post__img {
+  border-radius: 12px;
+}
+
+.post__title {
+  margin-top: 9px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.42;
+  color: $color-black;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+.post__stats {
+  display: flex;
+  align-items: center;
+
+  a {
+    position: relative;
+    display: block;
+    margin-right: 30px;
+
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    text-align: left;
+    color: $color-gray;
+    text-decoration: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      display: block;
+      width: 41px;
+      height: 24px;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.post__views {
+  padding-left: 50px;
+  &::before {
+    width: 41px;
+    height: 24px;
+    background-image: url("../img/icons/birds.png");
+  }
+}
+
+.post__comments {
+  padding-left: 35px;
+  &::before {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/icons/comments.png");
+  }
+}
+
+.post__footer {
+  a {
+    text-decoration: none;
+  }
+}

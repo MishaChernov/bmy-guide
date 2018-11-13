@@ -1,0 +1,35 @@
+.tabs {
+  width: 100%;
+  padding-top: 20px;
+  border-bottom: 2px solid #d9e2e2;
+}
+
+.tabs__item {
+  display: inline-block;
+  margin-right: 28px;
+  padding-left: 0;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-gray;
+  cursor: pointer;
+  transition-duration: 500ms easy;
+
+  &--active {
+    color: $color-black;
+    font-weight: 500;
+    padding-bottom: 20px;
+    box-shadow: 0 2px 0 #f34761;
+  }
+  &:hover {
+    transition-duration: 500ms easy;
+    color: $color-black;
+  }
+}

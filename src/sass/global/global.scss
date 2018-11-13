@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  font-family: $primary-font-family;
+}
+
+.container {
+  display: block;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+  transition: transform 500ms ease;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
